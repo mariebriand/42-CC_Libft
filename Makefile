@@ -22,6 +22,7 @@ NBR = libft_sources/libft_nbr/
 OUTPUT = libft_sources/libft_output/
 STRING = libft_sources/libft_string/
 GNL = libft_sources/get-next-line/
+PTF = libft_sources/ft_printf/
 
 #################################### SOURCES ####################################
 
@@ -62,6 +63,18 @@ SRCS += $(STRING)ft_strlen.c	$(STRING)ft_strchr.c	$(STRING)ft_strrchr.c \
 
 #--------------------------------GNL-#
 SRCS += $(GNL)gnl_utils.c		$(GNL)gnl.c \
+
+#--------------------------------PTF-#
+SRCS += $(PTF)ft_calloc_flag.c							$(PTF)ft_char_add_width.c \
+		$(PTF)ft_check_format.c 						$(PTF)ft_extract_buffer_part.c \
+		$(PTF)ft_format_arg.c							$(PTF)ft_get_format.c \
+		$(PTF)ft_get_string.c							$(PTF)ft_hexitoa.c \
+		$(PTF)ft_int_add_precision.c					$(PTF)ft_int_add_width.c \
+		$(PTF)ft_join.c								$(PTF)ft_print_adress.c \
+		$(PTF)ft_print_arguments.c						$(PTF)ft_print_char.c \
+		$(PTF)ft_printf.c								$(PTF)ft_print_nbr.c \
+		$(PTF)ft_print_str.c							$(PTF)ft_put_formatted_nbr.c \
+
 
 ##################################### BASIC #####################################
 
