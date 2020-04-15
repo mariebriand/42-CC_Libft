@@ -14,7 +14,7 @@
 
 /*
 ** Alloue (avec malloc(3)) et retourne une chaine de
-** caractères représentant l’integer reçu en argument.
+** caractères représentant un integer n reçu en argument.
 ** Les nombres négatifs doivent être gérés.
 ** =======
 ** #1 : l'integer à convertir.

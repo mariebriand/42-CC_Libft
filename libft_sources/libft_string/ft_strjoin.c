@@ -20,7 +20,7 @@
 ** #2 : La chaine de caractères suffixe.
 ** =======
 ** Retourne un pointeur sur la nouvelle chaîne,
-** ou NULL s'il l'allocation dynamique de mémoire échoue.
+** ou NULL si l'allocation dynamique de mémoire échoue.
 */
 
 char			*ft_strjoin(char const *s1, char const *s2)
