@@ -18,7 +18,7 @@
 ** de formatage si elles existent.
 ** =========
 ** #1 : la chaîne de caractère constante, 
-		qui contient (ou non) une (des) indication(s) de formatage.
+**		qui contient (ou non) une (des) indication(s) de formatage.
 ** #(...) : le(s) élément(s) dans l'ordre à formater.
 ** =========
 ** Retourne le nombre de caractères imrimés,

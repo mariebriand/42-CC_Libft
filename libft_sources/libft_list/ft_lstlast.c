@@ -12,20 +12,20 @@
 
 #include "../../libft_header/libft.h"
 
-/**
- * Renvoie le dernier élément de la liste.
-**/
+/*
+** Parcours la liste jusqu'au dernier élément.
+** =======
+** #1 : le début de la liste. 
+** =======
+** Retourne le dernier élément de la liste.
+*/
 
-t_list	*ft_lstlast(t_list *lst)
+t_list		*ft_lstlast(t_list *lst)
 {
-	t_list *current_list;
-
-	current_list = lst;
-	if (current_list)
+	if (lst != NULL)
 	{
-		while (current_list->next)
-			current_list = current_list->next;
-		return (current_list);
+		while (lst->next != NULL)
+			lst = lst->next;
 	}
-	return (NULL);
+	return (lst);
 }

@@ -12,25 +12,13 @@
 
 #include "../../libft_header/libft.h"
 
-/**
- * Ajoute l’élément new à la fin de la liste.
-**/
-
-/*void	ft_lstadd_back(t_list **alst, t_list *new)
-{
-	t_list	*tmp;
-​
-	if (alst && *alst)
-	{
-		tmp = *alst;
-		while (tmp->next)
-			tmp = tmp->next;
-		if (tmp->next == NULL)
-			tmp->next = new;
-	}
-	else if (alst)
-		*alst = new;
-}*/
+/*
+** Ajoute l’élément new à la fin de la liste.
+** =======
+** #1 : l’adresse du pointeur vers le premier élément de la liste.
+** #2 : l’adresse du pointeur vers l’élément à rajouterà la liste.
+** =======
+*/
 
 void	ft_lstadd_back(t_list **alst, t_list *new)
 {

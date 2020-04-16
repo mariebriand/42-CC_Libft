@@ -12,21 +12,23 @@
 
 #include "../../libft_header/libft.h"
 
-/**
- * Itère sur la list lst et applique la fonction f au
- * contenu chaque élément.
-**/
+/*
+** Itère sur la list lst et applique la fonction f
+** au contenu chaque élément.
+** =======
+** #1 : l’adresse du pointeur vers un élément.
+** #2 : l’adresse de la fonction à appliquer.
+** =======
+*/
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	t_list	*ptr_list;
-
-	ptr_list = lst;
-	if (!lst)
-		return ;
-	while (ptr_list)
+	if (lst != NULL)
 	{
-		f(ptr_list->content);
-		ptr_list = ptr_list->next;
+		while (lst != NULL)
+		{
+			f(lst->content);
+			lst = lst->next;
+		}
 	}
 }

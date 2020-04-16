@@ -12,27 +12,23 @@
 
 #include "../../libft_header/libft.h"
 
-/**
- * Supprime et libère la mémoire de l’élément passé en
- * paramètre, et de tous les élements qui suivent, à
- * l’aide de del et de free(3).
- * Enfin, le pointeur initial doit être mis à NULL.
-**/
+/*
+** Libère la mémoire de l’élément passé en argument
+** en utilisant la fonction del puis avec free(3).
+** La mémoire de next ne doit pas être libérée.
+** =======
+** #1 : l’adresse du pointeur vers un élément.
+** #2 : l’adresse de la fonction permettant
+**		de supprimer le contenu d’un élément.
+** =======
+*/
 
-void	ft_lstclear(t_list **lst, void (*del)(void *))
+void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
-	t_list	*current;
-	t_list	*next;
-
-	if (del == 0 || *lst == 0)
-		return ;
-	current = *lst;
-	while (current != NULL)
+	if (*lst != NULL && del != NULL)
 	{
-		next = current->next;
-		del(current->content);
-		free(current);
-		current = next;
+		ft_lstclear(&(*lst)->next, del);
+		ft_lstdelone(*lst, del);
+		*lst = NULL;
 	}
-	*lst = NULL;
 }

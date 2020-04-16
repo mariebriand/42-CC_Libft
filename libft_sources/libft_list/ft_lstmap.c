@@ -12,33 +12,44 @@
 
 #include "../../libft_header/libft.h"
 
-/**
- * Itère sur la liste lst et applique la fonction f au
- * contenu de chaque élément. Crée une nouvelle liste
- * résultant des applications successives de f. la
- * fonction del est la pour detruire le contenu d'un
- * element si necessaire.
- * Retourne la nouvelle liste ou NULL si l’allocation échoue.
-**/
 
-t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
+/*
+** Itère sur la liste lst et applique la fonction f au
+** contenu de chaque élément. Crée une nouvelle liste
+** résultant des applications successives de f. la
+** fonction del est la pour detruire le contenu d'un
+** element si necessaire.
+** Retourne la nouvelle liste ou NULL si l’allocation échoue.
+** =======
+** #1 : l’adresse du pointeur vers un élément.
+** #2 : l’adresse de la fonction à appliquer.
+** =======
+** Retourne la nouvelle liste, NULL si l’allocation échoue.
+*/
+
+t_list			*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list	*new;
-	t_list	*ret;
+	t_list		*first;
+	t_list		*map;
 
-	new = NULL;
-	ret = NULL;
-	if (!lst || !f)
+	if (lst == NULL)
 		return (NULL);
-	while (lst)
+	if (!(map = ft_lstnew(f(lst))))
+		return (NULL);
+	first = map;
+	while (lst != NULL)
 	{
-		if (!(new = ft_lstnew(f(lst->content))))
+		if (lst->next != NULL)
 		{
-			ft_lstclear(&ret, del);
-			return (NULL);
+			if (!(map->next = ft_lstnew((*f)(lst->next))))
+			{
+				ft_lstclear(&first, del);
+				return (0);
+			}
+			map = map->next;
 		}
-		ft_lstadd_back(&ret, new);
 		lst = lst->next;
 	}
-	return (ret);
+	map = 0;
+	return (first);
 }

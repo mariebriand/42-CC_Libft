@@ -12,23 +12,27 @@
 
 #include "../../libft_header/libft.h"
 
-/**
- * Alloue (avec malloc(3)) et renvoie un nouvel
- * élément. la variable content est initialisée à
- * l’aide de la valeur du paramètre content.
- * La variable ’next’ est initialisée à NULL.
-**/
+/*
+** Alloue (avec malloc(3)) et renvoie un nouvel
+** élément. la variable content est initialisée à
+** l’aide de la valeur du paramètre content.
+** La variable next est initialisée à NULL.
+** =======
+** #1 : un pointeur sur la donnée contenue dans le maillon. 
+** =======
+** Retourne un nouvel élément de type t_list.
+*/
 
 t_list	*ft_lstnew(void *content)
 {
-	t_list	*newlist;
+	t_list	*new;
 
-	if (!(newlist = malloc(sizeof(t_list))))
+	if (!(new = malloc(sizeof(t_list))))
 		return (NULL);
-	if (newlist)
+	else
 	{
-		newlist->content = content;
-		newlist->next = NULL;
+		new->content = content;
+		new->next = NULL;
 	}
-	return (newlist);
+	return (new);
 }
