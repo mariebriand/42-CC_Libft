@@ -14,10 +14,10 @@
 
 /*
 ** Crée une nouvelle chaîne de caractères en concaténant
-** une chaîne source et un caractère donné.
+** un caractère donné et chaîne source.
 ** =========
 ** #1 : un caractère donné
-** #2 : la chaîne de caractères à ajouter avant.
+** #2 : la chaîne de caractères à ajouter après.
 ** =========
 ** Retourne la nouvelle chaîne de caractères créée,
 ** NULL en cas d'erreur.
@@ -50,10 +50,10 @@ char	*ft_add_front_to_char(char c, char *str)
 
 /*
 ** Crée une nouvelle chaîne de caractères en concaténant
-** un caractère donné et chaîne source.
+** une chaîne source et un caractère donné.
 ** =========
 ** #1 : un caractère donné
-** #2 : la chaîne de caractères à ajouter après.
+** #2 : la chaîne de caractères à ajouter avant.
 ** =========
 ** Retourne la nouvelle chaîne de caractères créée,
 ** NULL en cas d'erreur.

@@ -13,15 +13,13 @@
 #include "../../libft_header/libftprintf.h"
 
 /*
-** Récupère l'indication de formatage "flag".
+** Récupère l'indication de formatage flag.
 ** =========
 ** #1 : la chaîne de caractères à formater.
 ** #2 : un pointeur sur la position actuelle
 ** 		dans la chaîne de caractères (= adresse de l'index).
 ** =========
-** Retourne la valeur correspondante :
-** 0 s'il n'y a pas de "flag", 1 pour le "flag" '0',
-** 2 pour le "flag" '-' et -1 en cas d'erreur.
+** Retourne le format, contenant désormais le flag.
 */
 
 t_format	ft_f(const char *str, size_t *ptr_pos, t_format form)
@@ -51,15 +49,14 @@ t_format	ft_f(const char *str, size_t *ptr_pos, t_format form)
 }
 
 /*
-** Récupère l'indication de formatage "width".
+** Récupère l'indication de formatage width.
 ** =========
 ** #1 : la chaîne de caractères à formater.
 ** #2 : un pointeur sur la position actuelle
 ** 		dans la chaîne de caractère (= adresse de l'index).
 ** #3 : un pointeur sur l'élément actuel de la liste d'arguments.
 ** =========
-** Retourne la valeur correspondante avec
-** 0 s'il n'y a pas de "width" et -1 en cas d'erreur.
+** Retourne le format, contenant désormais la width.
 */
 
 t_format	ft_w(const char *s, size_t *p_pos, va_list ap, t_format form)
@@ -92,15 +89,14 @@ t_format	ft_w(const char *s, size_t *p_pos, va_list ap, t_format form)
 }
 
 /*
-** Récupère l'indication de formatage "precision".
+** Récupère l'indication de formatage precision.
 ** =========
 ** #1 : la chaîne de caractères à formater.
 ** #2 : un pointeur sur la position actuelle
 ** 		dans la chaîne de caractères (= adresse de l'index).
 ** #3 : un pointeur sur l'élément actuel de la liste d'arguments.
 ** =========
-** Retourne la valeur correspondante avec
-** 0 s'il n'y a pas de "precision" et -1 en cas d'erreur.
+** Retourne le format, contenant désormais la précision.
 */
 
 t_format	ft_p(const char *s, size_t *p_pos, va_list ap, t_format form)
@@ -132,14 +128,14 @@ t_format	ft_p(const char *s, size_t *p_pos, va_list ap, t_format form)
 }
 
 /*
-** Récupère l'indication de formatage "specifier".
+** Récupère l'indication de formatage specifier.
 ** =========
 ** #1 : la chaîne de caractères à formater.
 ** #2 : un pointeur sur la position actuelle
 ** 		dans la chaîne de caractères (= adresse de l'index).
 ** =========
 ** Retourne la valeur correspondante avec
-** '0' s'il n'y a pas de "precision".
+** '0' s'il n'y a pas de precision.
 */
 
 char		ft_s(const char *str, size_t *ptr_pos)
@@ -170,8 +166,8 @@ char		ft_s(const char *str, size_t *ptr_pos)
 }
 
 /*
-** Collecte les indications de formatage "flag","width",
-** "precision" et "specifier" et affecte les différentes
+** Collecte les indications de formatage flag, width,
+** precision et specifier et affecte les différentes
 ** valeurs à une variable de type form.
 ** =========
 ** #1 : la chaîne de caractères à formater.

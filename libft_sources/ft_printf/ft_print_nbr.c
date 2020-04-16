@@ -21,7 +21,7 @@
 ** #2 : un pointeur sur l'élément actuel de la liste d'arguments.
 ** =========
 ** Retourne le nombre total de caractères imprimés,
-** -1 en cas d'errreur.
+** -1 en cas d'erreur.
 */
 
 int		ft_print_signed_dec(t_format format, va_list ap)
@@ -59,7 +59,7 @@ int		ft_print_signed_dec(t_format format, va_list ap)
 ** #2 : un pointeur sur l'élément actuel de la liste d'arguments.
 ** =========
 ** Retourne le nombre total de caractères imprimés,
-** -1 en cas d'errreur.
+** -1 en cas d'erreur.
 */
 
 int		ft_print_unsigned_dec(t_format format, va_list ap)
@@ -97,7 +97,7 @@ int		ft_print_unsigned_dec(t_format format, va_list ap)
 ** #2 : un pointeur sur l'élément actuel de la liste d'arguments.
 ** =========
 ** Retourne le nombre total de caractères imprimés,
-** -1 en cas d'errreur.
+** -1 en cas d'erreur.
 */
 
 int		ft_print_hex(t_format format, va_list ap)

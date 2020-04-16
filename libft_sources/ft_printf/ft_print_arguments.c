@@ -19,10 +19,8 @@
 ** #1 : un format.
 ** #2 : un pointeur sur l'élément actuel de la liste d'arguments.
 ** =========
-** Retourne le nombre total de caractères imprimés,
-** -1 en cas d'errreur.
+** Retourne le nombre total de caractères imprimés.
 */
-
 
 int	ft_print_arguments(t_format format, va_list ap)
 {

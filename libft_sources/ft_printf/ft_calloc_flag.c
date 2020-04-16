@@ -18,8 +18,7 @@
 ** #1 : la taille de la chaîne à créer.
 ** #2 : le caractère servant à initialiser la chaîne.
 ** =========
-** Retourne -1 si le format n'est pas valide,
-** 0 si elle l'est.
+** Retourne la chaîne résultante, NULL si l'allocation échoue.
 */
 
 char	*ft_calloc_flag(size_t count, int c)

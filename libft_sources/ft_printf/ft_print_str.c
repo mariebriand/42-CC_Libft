@@ -19,6 +19,7 @@
 ** #1 : un format.
 ** #2 : un pointeur sur l'élément actuel de la liste d'arguments.
 ** =========
+** Retourne le nombre de caractères imprimés.
 */
 
 int		ft_print_str(t_format format, va_list ap)
@@ -92,7 +93,7 @@ char	*ft_to_add(int flag, int nbr_space)
 }
 
 /*
-** Crée la chapine finale formattée
+** Crée la chaîne finale formattée
 ** en fonction du champ flag du format. 
 ** =========
 ** #1 : le champ flag du format.

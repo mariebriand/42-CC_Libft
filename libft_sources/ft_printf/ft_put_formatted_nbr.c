@@ -19,7 +19,7 @@
 ** #2 : une chaîne de caractère.
 ** =========
 ** Retourne le nombre total de caractères imprimés,
-** -1 en cas d'errreur.
+** -1 en cas d'erreur.
 */
 
 int		ft_put_formatted_nbr(t_format format, char *number)

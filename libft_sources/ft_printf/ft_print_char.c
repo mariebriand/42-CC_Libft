@@ -19,6 +19,8 @@
 ** #1 : un format.
 ** #2 : le caractère à imprimer.
 ** =========
+** Retourne le nombre de caractère imprimés
+** suite au formatage.
 */
 
 int		ft_put_formatted_char(t_format format, char c)
