@@ -19,7 +19,9 @@
 ** #2 : un pointeur sur la position actuelle
 ** 		dans la chaîne de caractères (= adresse de l'index).
 ** =========
-** Retourne le format, contenant désormais le flag.
+** Retourne le format, contenant désormais le flag :
+** 0 si aucun flag, 1 si le flag est '0', 2 si le flag est '-'
+** (le flag '0' est ignoré quand le flag '-' est présent).  
 */
 
 t_format	ft_f(const char *str, size_t *ptr_pos, t_format form)
@@ -49,7 +51,9 @@ t_format	ft_f(const char *str, size_t *ptr_pos, t_format form)
 }
 
 /*
-** Récupère l'indication de formatage width.
+** Récupère l'indication de formatage width,
+** modifie le flag dans le cas où width < 0 
+** (le '-' est alors considéré comme un flag).
 ** =========
 ** #1 : la chaîne de caractères à formater.
 ** #2 : un pointeur sur la position actuelle
@@ -96,7 +100,8 @@ t_format	ft_w(const char *s, size_t *p_pos, va_list ap, t_format form)
 ** 		dans la chaîne de caractères (= adresse de l'index).
 ** #3 : un pointeur sur l'élément actuel de la liste d'arguments.
 ** =========
-** Retourne le format, contenant désormais la précision.
+** Retourne le format, contenant désormais la précision :
+** un entier positif ou -1 en cas d'erreur.
 */
 
 t_format	ft_p(const char *s, size_t *p_pos, va_list ap, t_format form)

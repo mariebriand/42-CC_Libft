@@ -22,7 +22,7 @@
 ** #(...) : le(s) élément(s) dans l'ordre à formater.
 ** =========
 ** Retourne le nombre de caractères imrimés,
-** sans compter l'octer nul final, -1 en cas d'erreur.
+** sans compter l'octer nul final.
 */
 
 int		ft_printf(const char *str, ...)
