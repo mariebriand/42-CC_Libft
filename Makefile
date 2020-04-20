@@ -24,7 +24,7 @@ STRING = libft_sources/libft_string/
 GNL = libft_sources/get-next-line/
 PTF = libft_sources/ft_printf/
 
-#################################### SOURCES ####################################
+#################################### SOURCES ###################################
 
 #-------------------------------CHAR-#
 SRCS += $(CHAR)ft_isalpha.c		$(CHAR)ft_isdigit.c		$(CHAR)ft_isalnum.c \
@@ -76,7 +76,7 @@ SRCS += $(PTF)ft_calloc_flag.c							$(PTF)ft_char_add_width.c \
 		$(PTF)ft_print_str.c							$(PTF)ft_put_formatted_nbr.c \
 
 
-##################################### BASIC #####################################
+##################################### BASIC ####################################
 
 CFLAGS 	= -Wall -Wextra -Werror
 
@@ -88,7 +88,7 @@ HEADER	= $(INC)libft.h
 
 OBJS	= $(SRCS:.c=.o)
 
-##################################### RULES #####################################
+##################################### RULES ####################################
 
 all: $(NAME)
 
