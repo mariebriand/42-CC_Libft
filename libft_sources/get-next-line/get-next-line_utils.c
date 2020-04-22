@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strndup.c                                       :+:      :+:    :+:   */
+/*   gnl_utils.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,33 +10,59 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft_header/libft.h"
+#include "../../libft_header/get_next_line.h"
 
 /*
-** Alloue avec malloc (3) un emplacement mémoire
-** dans lequelle elle copie les n premiers caractères de s1.
+** Cherche la première occurence de '\n' dans la chaîne de caractères s.
 ** =========
-** #1 : une chaîne de caractères à dupliquer.
-** #2 : la taille de la partie à dupliquer.
+** #1 : une chaîne de caractères.
 ** =========
-** Retourne un pointeur sur la chaîne dupliquée depuis s1,
-** ou NULL s'il l'allocation dynamique de mémoire échoue.
+** Retourne la taille de s.
 */
 
-char		*ft_strndup(char *s1, size_t size)
+ssize_t		ft_search_line(char *s)
 {
-	size_t	i;
-	char	*copy;
+	ssize_t	i;
 
 	i = 0;
-	copy = ((char *)malloc(sizeof(*copy) * (size + 1)));
-	if (copy == NULL)
-		return (NULL);
-	while (i < size)
+	while (s[i] != '\0')
 	{
-		copy[i] = s1[i];
+		if (s[i] == '\n')
+			return (i);
 		i++;
 	}
-	copy[i] = '\0';
-	return (copy);
+	return (-1);
+}
+
+/*
+** ft_strjoin(2) et libère la chaîne de caractère s1.
+** =========
+*/
+
+char		*ft_strjoin_gnl(char *s1, char *s2)
+{
+	size_t	i;
+	size_t	j;
+	size_t	len;
+	char	*str;
+
+	i = 0;
+	j = 0;
+	len = ft_strlen(s1) + ft_strlen(s2);
+	if (!(str = (char *)malloc(sizeof(char) * (len + 1))))
+		return (NULL);
+	while (s1[i] != '\0')
+	{
+		str[i] = s1[i];
+		i++;
+	}
+	while (s2[j] != '\0')
+	{
+		str[i] = s2[j];
+		j++;
+		i++;
+	}
+	str[i] = '\0';
+	free(s1);
+	return (str);
 }

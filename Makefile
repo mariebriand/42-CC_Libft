@@ -29,24 +29,24 @@ PTF = libft_sources/ft_printf/
 #-------------------------------CHAR-#
 SRCS += $(CHAR)ft_isalpha.c		$(CHAR)ft_isdigit.c		$(CHAR)ft_isalnum.c \
 		$(CHAR)ft_isascii.c		$(CHAR)ft_isprint.c		$(CHAR)ft_toupper.c \
-		$(CHAR)ft_tolower.c		$(CHAR)ft_isspace.c \
+		$(CHAR)ft_tolower.c		$(CHAR)ft_isspace.c
 
 #----------------------------CONVERT-#
-SRCS += $(CONVERT)ft_atoi.c		$(CONVERT)ft_itoa.c		$(CONVERT)ft_uitoa.c \
+SRCS += $(CONVERT)ft_atoi.c		$(CONVERT)ft_itoa.c		$(CONVERT)ft_uitoa.c
 
 #-------------------------------LIST-#
 SRCS += $(LIST)ft_lstnew.c		$(LIST)ft_lstsize.c		$(LIST)ft_lstadd_back.c \
 		$(LIST)ft_lstclear.c	$(LIST)ft_lstiter.c		$(LIST)ft_lstmap.c \
-		$(LIST)ft_lstdelone.c	$(LIST)ft_lstlast.c		$(LIST)ft_lstadd_front.c \
+		$(LIST)ft_lstdelone.c	$(LIST)ft_lstlast.c		$(LIST)ft_lstadd_front.c
 
 #-----------------------------MEMORY-#
 SRCS += $(MEMORY)ft_memset.c	$(MEMORY)ft_bzero.c		$(MEMORY)ft_memcpy.c \
 		$(MEMORY)ft_memccpy.c	$(MEMORY)ft_memmove.c	$(MEMORY)ft_memchr.c \
-		$(MEMORY)ft_memcmp.c	$(MEMORY)ft_calloc.c \
+		$(MEMORY)ft_memcmp.c	$(MEMORY)ft_calloc.c
 
 #--------------------------------NBR-#
 SRCS += $(NBR)ft_intlen.c		$(NBR)ft_uintlen.c		$(NBR)ft_hexintlen.c \
-		$(NBR)ft_long_hexintlen.c \
+		$(NBR)ft_long_hexintlen.c
 
 #-----------------------------OUTPUT-#
 SRCS += $(OUTPUT)ft_putchar_fd.c						$(OUTPUT)ft_putnbr_fd.c \
@@ -59,10 +59,10 @@ SRCS += $(STRING)ft_strlen.c	$(STRING)ft_strchr.c	$(STRING)ft_strrchr.c \
 		$(STRING)ft_strnstr.c	$(STRING)ft_strdup.c	$(STRING)ft_strtrim.c \
 		$(STRING)ft_strmapi.c	$(STRING)ft_strjoin.c 	$(STRING)ft_split.c \
 		$(STRING)ft_substr.c	$(STRING)ft_strndup.c	$(STRING)ft_strcpy.c \
-		$(STRING)ft_strncpy.c
+		$(STRING)ft_strncpy.c	$(STRING)ft_strcmp.c
 
 #--------------------------------GNL-#
-SRCS += $(GNL)gnl_utils.c		$(GNL)gnl.c \
+SRCS += $(GNL)get-next-line.c							$(GNL)get-next-line_utils.c
 
 #--------------------------------PTF-#
 SRCS += $(PTF)ft_calloc_flag.c							$(PTF)ft_char_add_width.c \
@@ -70,11 +70,10 @@ SRCS += $(PTF)ft_calloc_flag.c							$(PTF)ft_char_add_width.c \
 		$(PTF)ft_format_arg.c							$(PTF)ft_get_format.c \
 		$(PTF)ft_get_string.c							$(PTF)ft_hexitoa.c \
 		$(PTF)ft_int_add_precision.c					$(PTF)ft_int_add_width.c \
-		$(PTF)ft_join.c								$(PTF)ft_print_adress.c \
+		$(PTF)ft_join.c									$(PTF)ft_print_adress.c \
 		$(PTF)ft_print_arguments.c						$(PTF)ft_print_char.c \
 		$(PTF)ft_printf.c								$(PTF)ft_print_nbr.c \
-		$(PTF)ft_print_str.c							$(PTF)ft_put_formatted_nbr.c \
-
+		$(PTF)ft_print_str.c							$(PTF)ft_put_formatted_nbr.c
 
 ##################################### BASIC ####################################
 

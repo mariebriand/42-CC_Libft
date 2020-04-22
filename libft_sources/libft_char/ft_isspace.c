@@ -21,7 +21,7 @@
 ** 0 si ce n'est pas le cas (FAUX).
 */
 
-int	ft_is_space(int c)
+int	ft_isspace(int c)
 {
 	if (c == ' ')
 		return (1);

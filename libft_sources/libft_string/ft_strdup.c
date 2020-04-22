@@ -18,7 +18,7 @@
 ** =======
 ** #1 : chaîne à dupliquer.
 ** =======
-** Retourne un pointeur sur la chaîne dupliquée depuis s,
+** Retourne un pointeur sur la chaîne dupliquée depuis s1,
 ** ou NULL s'il l'allocation dynamique de mémoire échoue.
 */
 
