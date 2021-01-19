@@ -1,28 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_islower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/05 08:37:56 by mabriand          #+#    #+#             */
-/*   Updated: 2019/11/18 20:40:06 by mabriand         ###   ########.fr       */
+/*   Created: 2019/11/05 10:18:51 by mabriand          #+#    #+#             */
+/*   Updated: 2019/11/18 17:48:14 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft_header/libft.h"
 
 /*
-** If character c is an upper-case letter, converts it in lower-case.
+** Check if c is a lower-case.
 ** =========
-** #1 : the char to convert.
+** #1 : the char to check.
 ** =========
-** Returns the converted character, 
-** or the original if conversion was not possible.
+** Returns 1 if TRUE, 0 if FALSE.
 */
 
-int	ft_tolower(int c)
+int	ft_islower(int c)
 {
-	if (ft_isupper(c) == 1)
-		return (c + 32);
+	if (c >= 'a' && c <= 'z')
+		return (1);
+	return (0);
 }

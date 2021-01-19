@@ -13,19 +13,16 @@
 #include "../../libft_header/libft.h"
 
 /*
-** Convertit la lettre c en MAJ, si possible.
+** If character c is a lower-case letter, converts it in upper-case. 
 ** =========
-** #1 : le carctère à convertir.
+** #1 : the char to convert.
 ** =========
-** Retourne la lettre convertie, ou celle de départ
-** si la conversion n'était pas possible.
+** Returns the converted character, 
+** or the original if conversion was not possible.
 */
 
 int	ft_toupper(int c)
 {
-	if (c >= 'a' && c <= 'z')
-	{
-		c = c - 32;
-	}
-	return (c);
+	if (ft_islower(c) == 1)
+		return (c - 32);
 }

@@ -13,12 +13,11 @@
 #include "../../libft_header/libft.h"
 
 /*
-** Vérifie si le caractère c est alphanumérique.
+** Check if c is alphanumerical
 ** =========
-** #1 : le carctère à analyser.
+** #1 : the char to check.
 ** =========
-** Retourne 1 si c'est le cas (VRAI),
-** 0 si ce n'est pas le cas (FAUX).
+** Returns 1 if TRUE, 0 if FALSE.
 */
 
 int	ft_isalnum(int c)

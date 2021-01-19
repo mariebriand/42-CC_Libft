@@ -13,19 +13,16 @@
 #include "../../libft_header/libft.h"
 
 /*
-** Vérifie si le caractère c est numérique.
+** Check if c is numerical
 ** =========
-** #1 : le carctère à analyser.
+** #1 : the char to check.
 ** =========
-** Retourne 1 si c'est le cas (VRAI),
-** 0 si ce n'est pas le cas (FAUX).
+** Returns 1 if TRUE, 0 if FALSE.
 */
 
 int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
-	{
 		return (1);
-	}
 	return (0);
 }

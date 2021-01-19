@@ -13,17 +13,16 @@
 #include "../../libft_header/libft.h"
 
 /*
-** Vérifie si le caractère c est un espace.
+** Check if c is a whitespace
 ** =========
-** #1 : le carctère à analyser.
+** #1 : the char to check.
 ** =========
-** Retourne 1 si c'est le cas (VRAI),
-** 0 si ce n'est pas le cas (FAUX).
+** Returns 1 if TRUE, 0 if FALSE.
 */
 
 int	ft_isspace(int c)
 {
-	if (c == ' ')
+	if (c == ' ' || c == '\t' ||c == '\n' || c == '\v' || c == '\f' || c == '\r')
 		return (1);
 	return (0);
 }
