@@ -15,7 +15,7 @@
 /*
 ** Check if c is an ASCII character
 ** =========
-** #1 : the char to check.
+** #1 : char to check.
 ** =========
 ** Returns 1 if TRUE, 0 if FALSE.
 */

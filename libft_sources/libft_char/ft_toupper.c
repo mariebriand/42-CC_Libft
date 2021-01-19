@@ -15,7 +15,7 @@
 /*
 ** If character c is a lower-case letter, converts it in upper-case. 
 ** =========
-** #1 : the char to convert.
+** #1 : char to convert.
 ** =========
 ** Returns the converted character, 
 ** or the original if conversion was not possible.

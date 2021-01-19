@@ -13,13 +13,12 @@
 #include "../../libft_header/libft.h"
 
 /*
-** Alloue (avec malloc(3)) et retourne une chaine de
-** caractères représentant un unsigned integer n reçu en argument.
+** Allocate (with malloc(3)) and converts the unsigned int
+** reveived as an argument to a string representation.
 ** =======
-** #1 : l'integer à convertir.
+** #1 : integer to convert.
 ** =======
-** Retourne la chaine de caractères représentant n,
-** NULL si l’allocation échoue.
+** Returns the string representing n or NULL if it fails.
 */
 
 char				*ft_uitoa(unsigned int n)
@@ -39,8 +38,12 @@ char				*ft_uitoa(unsigned int n)
 		{
 			str[len - 1] = (tmp % 10) + '0';
 			len--;
-			tmp = tmp / 10;
+			tmp /= 10;
 		}
 	}
 	return (str);
 }
+
+/*
+** Once str has been used, it must be freed or it can cause leaks.
+*/

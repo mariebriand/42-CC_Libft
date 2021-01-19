@@ -13,27 +13,26 @@
 #include "../../libft_header/libft.h"
 
 /*
-** Alloue (avec malloc(3)) et retourne une chaine de
-** caractères représentant un integer n reçu en argument.
-** Les nombres négatifs doivent être gérés.
+** Allocate (with malloc(3)) and converts the int
+** reveived as an argument to a string representation.
+** (Negative numbers must be handled.)
 ** =======
-** #1 : l'integer à convertir.
+** #1 : Integer to convert.
 ** =======
-** Retourne la chaine de caractères représentant l’integer,
-** NULL si l’allocation échoue.
+** Returns the string representing n or NULL if it fails.
 */
 
 char				*ft_itoa(int n)
 {
-	long			tmp;
-	char			*str;
-	size_t			len;
+	long	tmp;
+	char	*str;
+	size_t	len;
 
 	tmp = (long)n;
 	str = NULL;
 	len = ft_intlen(tmp) + (n < 0 ? 1 : 0);
 	if (n < 0)
-		tmp = (tmp * -1);
+		tmp *= -1;
 	str = (char *)malloc(sizeof(char) * (len + 1));
 	if (str != NULL)
 	{
@@ -42,10 +41,14 @@ char				*ft_itoa(int n)
 		{
 			str[len - 1] = (tmp % 10) + '0';
 			len--;
-			tmp = tmp / 10;
+			tmp /= 10;
 		}
 		if (n < 0)
 			str[0] = '-';
 	}
 	return (str);
 }
+
+/*
+** Once str has been used, it must be freed or it can cause leaks.
+*/

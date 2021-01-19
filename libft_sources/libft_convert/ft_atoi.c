@@ -13,11 +13,12 @@
 #include "../../libft_header/libft.h"
 
 /*
-** Converti le début de la chaîne pointée en entier.
+** Converts the initial portion of the string
+** pointed to by str to int representation.
 ** =======
-** #1: un pointeur vers une chaîne de caractères.
+** #1: pointer to string
 ** =======
-** Retourne le résultat de la conversion en entier de type int.
+** Retturns the conversion result as an int.
 */
 
 int	ft_atoi(const char *str)
@@ -29,7 +30,7 @@ int	ft_atoi(const char *str)
 	i = 0;
 	minus = 1;
 	nbr = 0;
-	while ((str[i] >= 9 && str[i] <= 13) || str[i] == 32)
+	while (ft_isspace(str[i]) == 1)
 		i++;
 	if (str[i] == '-' || str[i] == '+')
 	{
@@ -37,7 +38,7 @@ int	ft_atoi(const char *str)
 			minus = -1;
 		i++;
 	}
-	while (str[i] >= '0' && str[i] <= '9')
+	while (ft_isdigit(str[i]) == 1)
 	{
 		nbr = (nbr * 10) + str[i] - 48;
 		i++;
