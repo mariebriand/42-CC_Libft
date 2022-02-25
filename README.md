@@ -17,7 +17,7 @@ of `tar` now just used to make libraries).
 
 The implemetend functions are the following:
 
-####    Mandatory functions             ####   
+####    Mandatory & bonus functions     ####   
 *   ft_isalnum(1) 
 *   ft_isalpha(1)
 *   ft_isascii(1)
@@ -30,10 +30,6 @@ The implemetend functions are the following:
 *   ft_tolower(1)
 *   ft_toupper(1)
 
-*   ft_atoi(1)
-*   ft_itoa(1)
-
-####    Bonus                           ####
 ####    Functions added over-time       ####
 
 
@@ -41,6 +37,14 @@ The implemetend functions are the following:
 ##  Usage                               ##
 ##  Support                             ##
 ##  Roadmap                             ##
+*   Update remaining functions
+*   Update README.md consequently
+*   Define the project status
+*   Define the installaton process
+*   Define the usage
+*   Add some adequate badges
+*   Add the bibliography/a notion link
+
 ##  Conributing                         ##
 ##  Authors and acknowledgement         ##
 ##  License                             ##
