@@ -6,47 +6,13 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/18 19:47:11 by mabriand          #+#    #+#             */
-/*   Updated: 2019/11/28 11:52:25 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/02/25 16:50:16 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft_header/libft.h"
 
-/*
-** Alloue (avec malloc(3)) un tableau
-** de chaines de caractères obtenu en séparant s à
-** l’aide du caractère c, utilisé comme délimiteur.
-** Le tableau doit être terminé par NULL.
-** =======
-** #1 : La chaine de caractères à découper.
-** #2 : Le caractère délimitant.
-** =======
-** Retourne le tableau de nouvelles chaînes de caractères,
-** NULL si l’allocationéchoue
-*/
-
-static int		ft_countword(char const *s, char c)
-{
-	int			i;
-	int			count;
-
-	i = 0;
-	count = 0;
-	while (s[i] != '\0')
-	{
-		while (s[i] == c)
-			i++;
-		if (s[i] != c && s[i] != '\0')
-		{
-			while (s[i] != c && s[i] != '\0')
-				i++;
-			count++;
-		}
-	}
-	return (count);
-}
-
-static void		ft_free_split(char **tab, size_t index)
+static void	ft_free_split(char **tab, size_t index)
 {
 	size_t i;
 
@@ -62,7 +28,19 @@ static void		ft_free_split(char **tab, size_t index)
 	tab = NULL;
 }
 
-static char		**ft_createsplit(char const *s, char c, char **newtab)
+/*
+**	Parameters:
+**		@ const char *s	:	string to cut.
+**		@ char c		:	char considered as separator.
+**		@ char **newtab	:	table made up with the words once they're separated.
+**
+**	Description:
+**		
+**	
+**	Return values:
+**		'tab' i.e. the table created.
+*/
+static char	**ft_createsplit(const char *s, char c, char **newtab)
 {
 	size_t	i;
 	size_t	start;
@@ -73,28 +51,72 @@ static char		**ft_createsplit(char const *s, char c, char **newtab)
 	while (s[i] != '\0')
 	{
 		if (s[i] == c)
-			i++;
+			++i;
 		else
 		{
 			start = 0;
 			while (s[i + start] != c && s[i + start] != '\0')
-				start++;
+				++start;
 			newtab[++index] = ft_substr(s, i, start);
 			if (newtab[index] == NULL)
 			{
 				ft_free_split(newtab, index);
 				break ;
 			}
-			i = i + start;
+			i += start;
 		}
 	}
 	return (newtab);
 }
 
-char			**ft_split(char const *s, char c)
+/*
+**	Parameters:
+**		@ const char *s	:	string to cut.
+**		@ char c		:	char considered as separator.
+**
+**	Description:
+**		Counts the number of what is considered a word given the separator.
+**	
+**	Return values:
+**		'count'	i.e. the number of words found.
+*/
+static int	ft_countword(const char *s, char c)
 {
-	char		**tab;
-	size_t		len;
+	int	i;
+	int	count;
+
+	i = 0;
+	count = 0;
+	while (s[i] != '\0')
+	{
+		while (s[i] == c)
+			++i;
+		if (s[i] != c && s[i] != '\0')
+		{
+			while (s[i] != c && s[i] != '\0')
+				++i;
+			++count;
+		}
+	}
+	return (count);
+}
+
+/*
+**	Parameters:
+**		@ const char *s	:	string to cut.
+**		@ char c		:	char considered as separator.
+**
+**	Description:
+**		Allocates a table (that must be terminated by NULL) made of strings 
+**		obtained by separating 's' with the help of 'c'.
+**	
+**	Return values:
+**		'tab' i.e. the table created.
+*/
+char		**ft_split(const char *s, char c)
+{
+	char	**tab;
+	size_t	len;
 
 	tab = NULL;
 	if (s != NULL)

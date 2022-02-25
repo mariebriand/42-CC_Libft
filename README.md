@@ -6,9 +6,8 @@ It will contain a collection of general purpose functions the different programs
 rely upon.
 
 > In fact, C programming can be very tedious when one doesn’t have access to the highly useful
-standard functions. This project is about understanding the way these functions work, implementing
-and learning to use them. Your will create your own library. It will be helpful since you will use
-it in your next C school assignments.
+standard functions. Then, this project is about understanding the way these functions work, implementing
+and learning to use them.
 
 ##  Description                         ##
 The objective of this project is to create a static library (.a file).  
@@ -30,8 +29,11 @@ The implemetend functions are the following:
 *   ft_tolower(1)
 *   ft_toupper(1)
 
-### Functions added over-time           ###
+*   ft_strcpy(2)
+*   ft_strdup(1)
+*   fft_strlen(1)
 
+### Functions added over-time           ###
 
 ##  Installation                        ##
 ##  Usage                               ##

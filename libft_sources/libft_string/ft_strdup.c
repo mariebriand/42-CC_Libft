@@ -6,27 +6,28 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/05 10:57:14 by mabriand          #+#    #+#             */
-/*   Updated: 2019/12/05 12:21:06 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/02/25 17:37:11 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft_header/libft.h"
 
 /*
-** Depuis une chaîne de caractères s1, en crée une nouvelle
-** dont la mémoire occupée est obtenue par un appel de malloc(3).
-** =======
-** #1 : chaîne à dupliquer.
-** =======
-** Retourne un pointeur sur la chaîne dupliquée depuis s1,
-** ou NULL s'il l'allocation dynamique de mémoire échoue.
+**	Parameters:
+**		@ const char *s1	:	string to duplicate.
+**
+**	Description:
+**		Duplicates 's1' by allocating a new string identical to 's1' and copying
+**		in it its content.
+**	
+**	Return values:
+**		'copy' i.e. the duplicate. 
 */
-
 char	*ft_strdup(const char *s1)
 {
 	size_t	i;
-	char	*s;
 	size_t	size;
+	char	*s;
 	char	*copy;
 
 	i = 0;
@@ -38,7 +39,7 @@ char	*ft_strdup(const char *s1)
 	while (i < size)
 	{
 		copy[i] = s1[i];
-		i++;
+		++i;
 	}
 	copy[i] = '\0';
 	return (copy);
