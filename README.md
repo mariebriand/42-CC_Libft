@@ -6,7 +6,7 @@ It will contain a collection of general purpose functions the different programs
 rely upon.
 
 ##  Description                          ##
-The objective of this project is to create a static library (.a file).
+The objective of this project is to create a static library (.a file).  
 It is actually just an archive of the original .o files, made with the `ar` command (a precedessor
 of `tar` now just used to make libraries).
 
