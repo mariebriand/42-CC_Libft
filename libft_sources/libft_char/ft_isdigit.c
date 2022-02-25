@@ -14,7 +14,7 @@
 
 /*
 **	Parameters:
-**		@ int c	: char to check.
+**		@ int c	:	char to check.
 **
 **	Description:
 **		Checks if 'c' is a digit (stands between '0' and '9' in the ascii table).

@@ -14,7 +14,7 @@
 
 /*
 **	Parameters:
-**		@ int c	: char to check.
+**		@ int c	:	char to check.
 **
 **	Description:
 **		Checks if 'c' is an ahpabetical character or a digit.
