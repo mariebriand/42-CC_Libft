@@ -10,14 +10,14 @@ standard functions. This project is about understanding the way these functions 
 and learning to use them. Your will create your own library. It will be helpful since you will use
 it in your next C school assignments.
 
-##  Description                          ##
+##  Description                         ##
 The objective of this project is to create a static library (.a file).  
 It is actually just an archive of the original .o files, made with the `ar` command (a precedessor
 of `tar` now just used to make libraries).
 
 The implemetend functions are the following:
 
-####    Mandatory & bonus functions     ####   
+### Mandatory & bonus functions         ###
 *   ft_isalnum(1) 
 *   ft_isalpha(1)
 *   ft_isascii(1)
@@ -30,7 +30,7 @@ The implemetend functions are the following:
 *   ft_tolower(1)
 *   ft_toupper(1)
 
-####    Functions added over-time       ####
+### Functions added over-time           ###
 
 
 ##  Installation                        ##
