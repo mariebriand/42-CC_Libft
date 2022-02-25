@@ -1,5 +1,5 @@
 #   Libft                               #
-**Your very first own library**
+***Your very first own library***
 
 >   This project is about coding a C library.  
 It will contain a collection of general purpose functions the different programs of your cursus will
