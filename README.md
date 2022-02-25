@@ -31,7 +31,7 @@ The implemetend functions are the following:
 
 *   ft_strcpy(2)
 *   ft_strdup(1)
-*   fft_strlen(1)
+*   ft_strlen(1)
 
 ### Functions added over-time           ###
 
