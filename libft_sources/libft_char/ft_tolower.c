@@ -13,16 +13,18 @@
 #include "../../libft_header/libft.h"
 
 /*
-** If character c is an upper-case letter, converts it in lower-case.
-** =========
-** #1 : char to convert.
-** =========
-** Returns the converted character, 
-** or the original if conversion was not possible.
+**	Parameters:
+**		@ int c	:	char to check.
+**
+**	Description:
+**		Converts 'c' into a lower-case if it is an upper-case.
+**	
+**	Return values:
+**		The converted char (success), the original one (failure) else.
 */
-
 int	ft_tolower(int c)
 {
 	if (ft_isupper(c) == 1)
 		return (c + 32);
+	return (c);
 }

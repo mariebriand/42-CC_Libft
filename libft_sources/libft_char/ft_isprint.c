@@ -13,13 +13,15 @@
 #include "../../libft_header/libft.h"
 
 /*
-** Check if c is printable
-** =========
-** #1 : char to check.
-** =========
-** Returns 1 if TRUE, 0 if FALSE.
+**	Parameters:
+**		@ int c	:	char to check.
+**
+**	Description:
+**		Checks if 'c' is a printable character.
+**	
+**	Return values:
+**		1 (true) if it is, 0 (false) else.
 */
-
 int	ft_isprint(int c)
 {
 	if (c >= ' ' && c <= '~')

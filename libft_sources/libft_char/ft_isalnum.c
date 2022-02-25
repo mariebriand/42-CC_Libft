@@ -13,13 +13,15 @@
 #include "../../libft_header/libft.h"
 
 /*
-** Check if c is alphanumerical
-** =========
-** #1 : char to check.
-** =========
-** Returns 1 if TRUE, 0 if FALSE.
+**	Parameters:
+**		@ int c	: char to check.
+**
+**	Description:
+**		Checks if 'c' is an ahpabetical character or a digit.
+**	
+**	Return values:
+**		1 (true) if is, 0 (false) else.
 */
-
 int	ft_isalnum(int c)
 {
 	return (ft_isalpha(c) || ft_isdigit(c));

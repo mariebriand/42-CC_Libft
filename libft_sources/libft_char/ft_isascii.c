@@ -13,11 +13,14 @@
 #include "../../libft_header/libft.h"
 
 /*
-** Check if c is an ASCII character
-** =========
-** #1 : char to check.
-** =========
-** Returns 1 if TRUE, 0 if FALSE.
+**	Parameters:
+**		@ int c	:	char to check.
+**
+**	Description:
+**		Checks if 'c' is an ascii character (between 0 and 127).
+**	
+**	Return values:
+**		1 (true) if it is, 0 (false) else.
 */
 
 int	ft_isascii(int c)

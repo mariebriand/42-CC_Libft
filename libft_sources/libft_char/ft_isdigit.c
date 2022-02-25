@@ -13,13 +13,15 @@
 #include "../../libft_header/libft.h"
 
 /*
-** Check if c is numerical
-** =========
-** #1 : char to check.
-** =========
-** Returns 1 if TRUE, 0 if FALSE.
+**	Parameters:
+**		@ int c	: char to check.
+**
+**	Description:
+**		Checks if 'c' is a digit (stands between '0' and '9' in the ascii table).
+**	
+**	Return values:
+**		1 (true) if it is, 0 (false) else.
 */
-
 int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')

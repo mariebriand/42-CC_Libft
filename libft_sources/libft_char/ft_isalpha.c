@@ -13,13 +13,15 @@
 #include "../../libft_header/libft.h"
 
 /*
-** Check if c is alphabetical
-** =========
-** #1 : char to check.
-** =========
-** Returns 1 if TRUE, 0 if FALSE.
+**	Parameters:
+**		@ int c	: char to check.
+**
+**	Description:
+**		Checks if 'c' is alphabetical (a lower-case or an upper-case). 
+**	
+**	Return values:
+**		1 (true) if is, 0 (false) else.
 */
-
 int	ft_isalpha(int c)
 {
 	return (ft_islower(c) || ft_isupper(c));

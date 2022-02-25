@@ -13,16 +13,18 @@
 #include "../../libft_header/libft.h"
 
 /*
-** Check if c is a whitespace
-** =========
-** #1 : char to check.
-** =========
-** Returns 1 if TRUE, 0 if FALSE.
+**	Parameters:
+**		@ int c	:	char to check.
+**
+**	Description:
+**		Checks if 'c' is a space.
+**	
+**	Return values:
+**		1 (true) if it is, 0 (false) else.
 */
-
 int	ft_isspace(int c)
 {
-	if (c == ' ' || c == '\t' ||c == '\n' || c == '\v' || c == '\f' || c == '\r')
+	if (c == ' ' || c == '\t' || c == '\n' || c == '\v' || c == '\f' || c == '\r')
 		return (1);
 	return (0);
 }

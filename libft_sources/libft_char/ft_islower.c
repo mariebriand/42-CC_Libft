@@ -13,13 +13,15 @@
 #include "../../libft_header/libft.h"
 
 /*
-** Check if c is a lower-case.
-** =========
-** #1 : char to check.
-** =========
-** Returns 1 if TRUE, 0 if FALSE.
+**	Parameters:
+**		@ int c	:	char to check.
+**
+**	Description:
+**		Checks if 'c' is a lower-case (between 'a' and 'z' in the ascii table).
+**	
+**	Return values:
+**		1 (true) if it is, 0 (false) else.
 */
-
 int	ft_islower(int c)
 {
 	if (c >= 'a' && c <= 'z')
