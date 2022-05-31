@@ -6,7 +6,7 @@
 #    By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/11/06 16:47:32 by mabriand          #+#    #+#              #
-#    Updated: 2019/11/25 16:04:09 by mabriand         ###   ########.fr        #
+#    Updated: 2022/05/31 16:22:14 by mabriand         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,15 +14,13 @@ NAME =	 libft.a
 
 ##################################### PATH #####################################
 
-CHAR = libft_sources/libft_char/
-CONVERT = libft_sources/libft_convert/
-LIST = libft_sources/libft_list/
-MEMORY = libft_sources/libft_memory/
-NBR = libft_sources/libft_nbr/
-OUTPUT = libft_sources/libft_output/
-STRING = libft_sources/libft_string/
-GNL = libft_sources/get-next-line/
-PTF = libft_sources/ft_printf/
+CHAR = src/char/
+CONVERT = src/convert/
+LIST = src/list/
+MEMORY = src/memory/
+NBR = src/nbr/
+OUTPUT = src/output/
+STRING = src/string/
 
 #################################### SOURCES ###################################
 
@@ -61,27 +59,13 @@ SRCS += $(STRING)ft_strlen.c	$(STRING)ft_strchr.c	$(STRING)ft_strrchr.c \
 		$(STRING)ft_substr.c	$(STRING)ft_strndup.c	$(STRING)ft_strcpy.c \
 		$(STRING)ft_strncpy.c	$(STRING)ft_strcmp.c
 
-#--------------------------------GNL-#
-SRCS += $(GNL)get-next-line.c							$(GNL)get-next-line_utils.c
-
-#--------------------------------PTF-#
-SRCS += $(PTF)ft_calloc_flag.c							$(PTF)ft_char_add_width.c \
-		$(PTF)ft_check_format.c 						$(PTF)ft_extract_buffer_part.c \
-		$(PTF)ft_format_arg.c							$(PTF)ft_get_format.c \
-		$(PTF)ft_get_string.c							$(PTF)ft_hexitoa.c \
-		$(PTF)ft_int_add_precision.c					$(PTF)ft_int_add_width.c \
-		$(PTF)ft_join.c									$(PTF)ft_print_adress.c \
-		$(PTF)ft_print_arguments.c						$(PTF)ft_print_char.c \
-		$(PTF)ft_printf.c								$(PTF)ft_print_nbr.c \
-		$(PTF)ft_print_str.c							$(PTF)ft_put_formatted_nbr.c
-
 ##################################### BASIC ####################################
 
 CFLAGS 	= -Wall -Wextra -Werror
 
 CC		= gcc
 
-INC		= libft_header/
+INC		= inc/
 
 HEADER	= $(INC)libft.h
 
