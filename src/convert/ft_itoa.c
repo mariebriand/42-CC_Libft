@@ -6,23 +6,24 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/11 09:56:08 by mabriand          #+#    #+#             */
-/*   Updated: 2019/11/28 11:51:44 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/05/31 16:45:43 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft_header/libft.h"
+#include "../../inc/libft.h"
 
 /*
-** Allocate (with malloc(3)) and converts the int
-** reveived as an argument to a string representation.
-** (Negative numbers must be handled.)
-** =======
-** #1 : Integer to convert.
-** =======
-** Returns the string representing n or NULL if it fails.
+**	Parameters:
+**		@ const char	*str	:	the int to convert into a string
+**
+**	Description:
+**		Allocate (with malloc(3)) and converts the unsigned int received as an
+**		argument to a string representation.
+**	
+**	Return values:
+**		The string representing n or NULL in case of failure.
 */
-
-char				*ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	long	tmp;
 	char	*str;
@@ -50,5 +51,5 @@ char				*ft_itoa(int n)
 }
 
 /*
-** Once str has been used, it must be freed or it can cause leaks.
+** /!\ Once 'str' has been used, it must be freed or it can cause leaks. /!\
 */

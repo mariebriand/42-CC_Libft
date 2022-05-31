@@ -6,22 +6,24 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/17 15:14:18 by mabriand          #+#    #+#             */
-/*   Updated: 2020/01/23 14:32:41 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/05/31 16:45:31 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft_header/libft.h"
+#include "../../inc/libft.h"
 
 /*
-** Allocate (with malloc(3)) and converts the unsigned int
-** reveived as an argument to a string representation.
-** =======
-** #1 : integer to convert.
-** =======
-** Returns the string representing n or NULL if it fails.
+**	Parameters:
+**		@ const char	*str	:	the uint to convert into a string
+**
+**	Description:
+**		Allocate (with malloc(3)) and converts the unsigned uint received as an
+**		argument to a string representation.
+**	
+**	Return values:
+**		The string representing n or NULL in case of failure.
 */
-
-char				*ft_uitoa(unsigned int n)
+char	*ft_uitoa(unsigned int n)
 {
 	unsigned long	tmp;
 	char			*str;
@@ -45,5 +47,5 @@ char				*ft_uitoa(unsigned int n)
 }
 
 /*
-** Once str has been used, it must be freed or it can cause leaks.
+** /!\ Once 'str' has been used, it must be freed or it can cause leaks. /!\
 */

@@ -6,21 +6,24 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/04 21:43:04 by mabriand          #+#    #+#             */
-/*   Updated: 2019/12/04 14:11:24 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/05/31 16:44:32 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft_header/libft.h"
+#include "../../inc/libft.h"
 
 /*
-** Converts the initial portion of the string
-** pointed to by str to int representation.
-** =======
-** #1: pointer to string
-** =======
-** Retturns the conversion result as an int.
+**	Parameters:
+**		@ const char	*str	:	the string in ascii to convert into an int
+**
+**	Description:
+**		Ignores all white spaces, then takes an initial + or - (depending on how
+**		many minuses were found) and finally, interprets the following digits as
+**		a numerical value.
+**	
+**	Return values:
+**		The int resulting from the conversion.
 */
-
 int	ft_atoi(const char *str)
 {
 	int i;
@@ -35,7 +38,7 @@ int	ft_atoi(const char *str)
 	if (str[i] == '-' || str[i] == '+')
 	{
 		if (str[i] == '-')
-			minus = -1;
+			minus *= -1;
 		i++;
 	}
 	while (ft_isdigit(str[i]) == 1)

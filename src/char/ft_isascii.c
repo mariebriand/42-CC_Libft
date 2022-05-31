@@ -6,11 +6,11 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/05 10:25:03 by mabriand          #+#    #+#             */
-/*   Updated: 2022/02/25 16:28:44 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/05/31 16:43:57 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft_header/libft.h"
+#include "../../inc/libft.h"
 
 /*
 **	Parameters:
@@ -22,7 +22,6 @@
 **	Return values:
 **		1 (true) if it is, 0 (false) else.
 */
-
 int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
