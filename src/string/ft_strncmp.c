@@ -6,11 +6,11 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/03 17:00:55 by mabriand          #+#    #+#             */
-/*   Updated: 2019/11/28 13:12:38 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/05/31 17:07:43 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft_header/libft.h"
+#include "../../inc/libft.h"
 
 /*
 ** Compare les n (au plus) premiers caractères 

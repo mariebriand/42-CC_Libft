@@ -6,11 +6,11 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/16 14:22:03 by mabriand          #+#    #+#             */
-/*   Updated: 2020/01/23 14:44:57 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/05/31 17:06:57 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft_header/libft.h"
+#include "../../inc/libft.h"
 
 /*
 ** Calcule la longueur d'un entier n,

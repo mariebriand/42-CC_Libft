@@ -6,11 +6,11 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/03 09:58:58 by mabriand          #+#    #+#             */
-/*   Updated: 2019/11/28 11:59:08 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/05/31 17:07:35 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft_header/libft.h"
+#include "../../inc/libft.h"
 
 /*
 ** Copie la chaîne de caractères src dans dst

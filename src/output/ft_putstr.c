@@ -6,11 +6,11 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/16 14:15:25 by mabriand          #+#    #+#             */
-/*   Updated: 2020/01/23 14:42:10 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/05/31 17:07:09 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft_header/libft.h"
+#include "../../inc/libft.h"
 
 /*
 ** Écrit la chaîne de caractères s.

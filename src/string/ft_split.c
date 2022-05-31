@@ -6,11 +6,11 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/18 19:47:11 by mabriand          #+#    #+#             */
-/*   Updated: 2022/02/25 16:50:16 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/05/31 17:07:12 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft_header/libft.h"
+#include "../../inc/libft.h"
 
 static void	ft_free_split(char **tab, size_t index)
 {

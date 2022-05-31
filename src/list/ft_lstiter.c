@@ -6,11 +6,11 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/13 11:08:00 by mabriand          #+#    #+#             */
-/*   Updated: 2019/11/28 11:51:53 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/05/31 17:06:39 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft_header/libft.h"
+#include "../../inc/libft.h"
 
 /*
 ** Itère sur la list lst et applique la fonction f

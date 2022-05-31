@@ -6,11 +6,11 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/06 13:21:37 by mabriand          #+#    #+#             */
-/*   Updated: 2019/11/28 11:51:38 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/05/31 17:07:14 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft_header/libft.h"
+#include "../../inc/libft.h"
 
 /*
 ** Recherche le caractère c dans la chaîne s.

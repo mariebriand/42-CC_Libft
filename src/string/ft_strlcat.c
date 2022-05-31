@@ -6,11 +6,11 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 16:50:40 by mabriand          #+#    #+#             */
-/*   Updated: 2019/11/28 11:59:13 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/05/31 17:07:32 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft_header/libft.h"
+#include "../../inc/libft.h"
 
 /*
 ** Concatène la chaîne de caractères src à la fin de dst,

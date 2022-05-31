@@ -6,7 +6,7 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/17 15:14:18 by mabriand          #+#    #+#             */
-/*   Updated: 2022/05/31 16:45:31 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/05/31 17:05:45 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,5 +47,5 @@ char	*ft_uitoa(unsigned int n)
 }
 
 /*
-** /!\ Once 'str' has been used, it must be freed or it can cause leaks. /!\
+** /!\ Once 'str' has been used, it must be freed or it can cause leaks.
 */

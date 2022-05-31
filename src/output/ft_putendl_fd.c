@@ -6,11 +6,11 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/08 16:55:22 by mabriand          #+#    #+#             */
-/*   Updated: 2019/11/28 11:52:11 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/05/31 17:07:02 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft_header/libft.h"
+#include "../../inc/libft.h"
 
 /*
 ** Écrit la chaîne de caractères s sur le file descriptor donné,

@@ -6,11 +6,11 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/13 11:05:40 by mabriand          #+#    #+#             */
-/*   Updated: 2019/11/28 11:51:50 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/05/31 17:06:34 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft_header/libft.h"
+#include "../../inc/libft.h"
 
 /*
 ** Libère la mémoire de l’élément passé en argument

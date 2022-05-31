@@ -6,11 +6,11 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/11 09:52:07 by mabriand          #+#    #+#             */
-/*   Updated: 2019/11/28 11:59:21 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/05/31 17:07:29 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft_header/libft.h"
+#include "../../inc/libft.h"
 
 /*
 ** Alloue (avec malloc(3)) et retourne une nouvelle

@@ -6,11 +6,11 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/04 15:13:43 by mabriand          #+#    #+#             */
-/*   Updated: 2019/12/12 14:46:38 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/05/31 17:07:48 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft_header/libft.h"
+#include "../../inc/libft.h"
 
 /*
 ** Alloue avec malloc (3) un emplacement mémoire

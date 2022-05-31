@@ -6,11 +6,11 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/08 17:57:40 by mabriand          #+#    #+#             */
-/*   Updated: 2019/11/28 12:00:46 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/05/31 17:07:40 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft_header/libft.h"
+#include "../../inc/libft.h"
 
 /*
 ** Applique la fonction f à chaque caractère de la

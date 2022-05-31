@@ -6,11 +6,11 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/05 13:46:12 by mabriand          #+#    #+#             */
-/*   Updated: 2019/11/28 13:08:10 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/05/31 17:07:50 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft_header/libft.h"
+#include "../../inc/libft.h"
 
 /*
 ** Cherche la première occurrence de la sous-chaîne needle
