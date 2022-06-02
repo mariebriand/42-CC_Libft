@@ -17,41 +17,22 @@ of `tar` now just used to make libraries).
 
 The implemetend functions are the following:
 
-### Mandatory & bonus functions ###
-
-* ft_isalnum(1)
-* ft_isalpha(1)
-* ft_isascii(1)
-* ft_isdigit(1)
-* ft_islower(1)
-* ft_isupper(1)
-* ft_isprint(1)
-* ft_isspace(1)
-* ft_isupper(1)
-* ft_tolower(1)
-* ft_toupper(1)
-
-* ft_strcpy(2)
-* ft_strdup(1)
-* ft_strlen(1)
-
-### Functions added over-time ###
-
 ## Installation ##
 
+`$ git clone https://github.com/mariebriand/42-CC_Libft.git` </br>
+`$ cd 42-CC_Libft` </br>
+`$ make` </br>
+
+You will then end up with a static library.
+
 ## Usage ##
+
+`$ gcc -Wall -Werror -Wextra [some_file].c libft.a`
+And so, don't forget ton include the header `libft.h` at the top of `[some_file].c`
 
 ## Support ##
 
 ## Roadmap ##
-
-* Update remaining functions
-* Update README.md consequently
-* Define the project status
-* Define the installaton process
-* Define the usage
-* Add some adequate badges
-* Add the bibliography/a notion link
 
 ## Conributing ##
 
@@ -60,3 +41,5 @@ The implemetend functions are the following:
 ## License ##
 
 ## Project status ##
+
+[![forthebadge](https://forthebadge.com/images/badges/made-with-c.svg)](https://forthebadge.com)

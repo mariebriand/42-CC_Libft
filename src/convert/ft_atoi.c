@@ -6,24 +6,12 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/04 21:43:04 by mabriand          #+#    #+#             */
-/*   Updated: 2022/05/31 16:44:32 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/06/02 14:28:55 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/libft.h"
 
-/*
-**	Parameters:
-**		@ const char	*str	:	the string in ascii to convert into an int
-**
-**	Description:
-**		Ignores all white spaces, then takes an initial + or - (depending on how
-**		many minuses were found) and finally, interprets the following digits as
-**		a numerical value.
-**	
-**	Return values:
-**		The int resulting from the conversion.
-*/
 int	ft_atoi(const char *str)
 {
 	int i;

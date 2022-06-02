@@ -6,7 +6,7 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/18 19:47:11 by mabriand          #+#    #+#             */
-/*   Updated: 2022/05/31 17:07:12 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/06/02 14:34:44 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,20 +26,9 @@ static void	ft_free_split(char **tab, size_t index)
 	}
 	free(tab);
 	tab = NULL;
+	return ;
 }
 
-/*
-**	Parameters:
-**		@ const char *s	:	string to cut.
-**		@ char c		:	char considered as separator.
-**		@ char **newtab	:	table made up with the words once they're separated.
-**
-**	Description:
-**		
-**	
-**	Return values:
-**		'tab' i.e. the table created.
-*/
 static char	**ft_createsplit(const char *s, char c, char **newtab)
 {
 	size_t	i;
@@ -69,17 +58,6 @@ static char	**ft_createsplit(const char *s, char c, char **newtab)
 	return (newtab);
 }
 
-/*
-**	Parameters:
-**		@ const char *s	:	string to cut.
-**		@ char c		:	char considered as separator.
-**
-**	Description:
-**		Counts the number of what is considered a word given the separator.
-**	
-**	Return values:
-**		'count'	i.e. the number of words found.
-*/
 static int	ft_countword(const char *s, char c)
 {
 	int	i;
@@ -101,18 +79,6 @@ static int	ft_countword(const char *s, char c)
 	return (count);
 }
 
-/*
-**	Parameters:
-**		@ const char *s	:	string to cut.
-**		@ char c		:	char considered as separator.
-**
-**	Description:
-**		Allocates a table (that must be terminated by NULL) made of strings 
-**		obtained by separating 's' with the help of 'c'.
-**	
-**	Return values:
-**		'tab' i.e. the table created.
-*/
 char		**ft_split(const char *s, char c)
 {
 	char	**tab;

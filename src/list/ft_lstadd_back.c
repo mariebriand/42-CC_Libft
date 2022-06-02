@@ -6,19 +6,11 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/13 09:57:24 by mabriand          #+#    #+#             */
-/*   Updated: 2022/05/31 17:06:22 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/06/02 14:29:24 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/libft.h"
-
-/*
-** Ajoute l’élément new à la fin de la liste.
-** =======
-** #1 : l’adresse du pointeur vers le premier élément de la liste.
-** #2 : l’adresse du pointeur vers l’élément à rajouterà la liste.
-** =======
-*/
 
 void	ft_lstadd_back(t_list **alst, t_list *new)
 {
@@ -30,4 +22,5 @@ void	ft_lstadd_back(t_list **alst, t_list *new)
 	}
 	else
 		(*alst) = new;
+	return ;
 }

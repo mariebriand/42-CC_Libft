@@ -1,0 +1,2 @@
+#include "./inc/libft.h"
+

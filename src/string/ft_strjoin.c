@@ -6,22 +6,11 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/11 09:52:07 by mabriand          #+#    #+#             */
-/*   Updated: 2022/05/31 17:07:29 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/06/02 14:35:06 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/libft.h"
-
-/*
-** Alloue (avec malloc(3)) et retourne une nouvelle
-** chaine, résultat de la concaténation de s1 et s2.
-** =======
-** #1 : La chaine de caractères préfixe.
-** #2 : La chaine de caractères suffixe.
-** =======
-** Retourne un pointeur sur la nouvelle chaîne,
-** ou NULL si l'allocation dynamique de mémoire échoue.
-*/
 
 char			*ft_strjoin(char const *s1, char const *s2)
 {

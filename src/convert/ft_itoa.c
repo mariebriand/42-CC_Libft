@@ -6,23 +6,12 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/11 09:56:08 by mabriand          #+#    #+#             */
-/*   Updated: 2022/05/31 17:05:36 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/06/02 14:29:00 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/libft.h"
 
-/*
-**	Parameters:
-**		@ const char	*str	:	the int to convert into a string
-**
-**	Description:
-**		Allocate (with malloc(3)) and converts the unsigned int received as an
-**		argument to a string representation.
-**	
-**	Return values:
-**		The string representing n or NULL in case of failure.
-*/
 char	*ft_itoa(int n)
 {
 	long	tmp;

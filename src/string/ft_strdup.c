@@ -6,23 +6,12 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/05 10:57:14 by mabriand          #+#    #+#             */
-/*   Updated: 2022/05/31 17:07:26 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/06/02 14:35:03 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/libft.h"
 
-/*
-**	Parameters:
-**		@ const char *s1	:	string to duplicate.
-**
-**	Description:
-**		Duplicates 's1' by allocating a new string identical to 's1' and copying
-**		in it its content.
-**	
-**	Return values:
-**		'copy' i.e. the duplicate. 
-*/
 char	*ft_strdup(const char *s1)
 {
 	size_t	i;

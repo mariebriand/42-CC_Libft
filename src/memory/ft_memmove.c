@@ -6,23 +6,11 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/06 12:48:30 by mabriand          #+#    #+#             */
-/*   Updated: 2019/12/06 12:54:00 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/06/02 14:32:57 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft_header/libft.h"
-
-/*
-** Copie n octets depuis la zone mémoire src 
-** vers la zone mémoire dst.
-** Les deux zones peuvent se chevaucher.
-** =========
-** #1 : la zone mémoire de destination.
-** #2 : la zone mémoire source.
-** #3 : le nombre d'octets à copier.
-** =========
-** Retourne un pointeur vers la zone mémoire dst.
-*/
+#include "../../inc/libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {

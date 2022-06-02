@@ -6,24 +6,11 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/08 17:59:24 by mabriand          #+#    #+#             */
-/*   Updated: 2022/05/31 17:07:55 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/06/02 14:35:38 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/libft.h"
-
-/*
-** Alloue (avec malloc(3)) et retourne une copie de
-** la chaine s1, sans les caractères spécifiés
-** dans set au début et à la fin de la chaine de
-** caractères.
-** =======
-** #1 : La chaine de caractères préfixe.
-** #2 : La chaine de caractères suffixe.
-** =======
-** Retourne un pointeur sur la nouvelle chaîne,
-** ou NULL s'il l'allocation dynamique de mémoire échoue.
-*/
 
 char		*ft_strtrim(char const *s1, char const *set)
 {

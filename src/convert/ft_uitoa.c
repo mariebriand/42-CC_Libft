@@ -6,23 +6,12 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/17 15:14:18 by mabriand          #+#    #+#             */
-/*   Updated: 2022/05/31 17:05:45 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/06/02 14:29:05 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/libft.h"
 
-/*
-**	Parameters:
-**		@ const char	*str	:	the uint to convert into a string
-**
-**	Description:
-**		Allocate (with malloc(3)) and converts the unsigned uint received as an
-**		argument to a string representation.
-**	
-**	Return values:
-**		The string representing n or NULL in case of failure.
-*/
 char	*ft_uitoa(unsigned int n)
 {
 	unsigned long	tmp;

@@ -1,36 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/06 12:46:07 by mabriand          #+#    #+#             */
-/*   Updated: 2019/12/05 15:57:57 by mabriand         ###   ########.fr       */
+/*   Created: 2019/11/06 13:55:59 by mabriand          #+#    #+#             */
+/*   Updated: 2022/06/02 14:32:44 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft_header/libft.h"
+#include "../../inc/libft.h"
 
-/*
-** Remplit les n premiers octets de la zone mémoire
-** pointée par s avec l'octet 0.
-** =========
-** #1 : la zone mémoire pointée.
-** #2 : l'octet donné pour le remplissage.
-** =========
-*/
-
-void	ft_bzero(void *s, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t	i;
-	char	*str;
+	size_t			i;
+	unsigned char	*char1;
+	unsigned char	*char2;
 
 	i = 0;
-	str = (char *)s;
-	while (i < n)
-	{
-		str[i] = '\0';
+	char1 = (unsigned char *)s1;
+	char2 = (unsigned char *)s2;
+	while ((i < n) && (char1[i] == char2[i]))
 		i++;
-	}
+	if (i == n)
+		return (0);
+	else
+		return (char1[i] - char2[i]);
 }

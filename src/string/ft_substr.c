@@ -6,24 +6,11 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/08 17:09:19 by mabriand          #+#    #+#             */
-/*   Updated: 2022/05/31 17:07:58 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/06/02 14:35:41 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/libft.h"
-
-/*
-** Alloue (avec malloc(3)) et retourne une chaine de caractères
-** issue de la chaine ’s’. Cette nouvelle chaine commence à l’index 
-** start et a pour taille maximale len.
-** =======
-** #1 : la chîne de laquelle extraire la nouvelle chaîne.
-** #2 : l'index de début de la nouvelle chaîne s.
-** #3 : la taille maximale de la nouvelle chapine.
-** =======
-** Retourne un pointeur sur la nouvelle chaîne,
-** ou NULL s'il l'allocation dynamique de mémoire échoue.
-*/
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

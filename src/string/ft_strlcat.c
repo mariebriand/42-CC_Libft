@@ -6,24 +6,11 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 16:50:40 by mabriand          #+#    #+#             */
-/*   Updated: 2022/05/31 17:07:32 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/06/02 14:35:09 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/libft.h"
-
-/*
-** Concatène la chaîne de caractères src à la fin de dst,
-** en veillant à ce que le nombre de cartères de dst après
-** concaténation ne dépasse pas dstsize. 
-** =========
-** #1 : une chaîne de caractères de destination.
-** #2 : une chaîne de caractères source.
-** #3 : le nombre maximal de caractères de dst à ajouter. 
-** =========
-** Retourne le nombre total de caractères de la chaîne dst
-** avant concaténation auquel on ajoute celui de src.
-*/
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {

@@ -6,23 +6,11 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/03 17:00:55 by mabriand          #+#    #+#             */
-/*   Updated: 2022/05/31 17:07:43 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/06/02 14:35:23 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/libft.h"
-
-/*
-** Compare les n (au plus) premiers caractères 
-** de deux chaînes s1 et s2.
-** =========
-** #1 : une chaîne de caractères s1.
-** #2 : une chaîne de caractères s2.
-** #3 : le nombre maximal de caractères à comparer. 
-** =========
-** Retourne un entier négatif, nul, ou positif,
-** si s1 est respectivement inférieure, égale ou supérieure à s2.
-*/
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

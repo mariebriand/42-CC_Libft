@@ -6,20 +6,11 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/08 15:39:20 by mabriand          #+#    #+#             */
-/*   Updated: 2022/05/31 17:07:04 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/06/02 14:33:57 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/libft.h"
-
-/*
-** Écrit l’integer n sur le file descriptor donné.
-** suivi d'un retour à la ligne.
-** =========
-** #1 : l'entier à écrire.
-** #2 : le file descriptor.
-** =========
-*/
 
 void	ft_putnbr_fd(int n, int fd)
 {
@@ -43,4 +34,5 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(n / 10, fd);
 		ft_putnbr_fd(n % 10, fd);
 	}
+	return ;
 }

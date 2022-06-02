@@ -6,22 +6,12 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/05 10:18:51 by mabriand          #+#    #+#             */
-/*   Updated: 2022/05/31 16:38:08 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/06/02 14:26:36 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/libft.h"
 
-/*
-**	Parameters:
-**		@ int c	:	char to check.
-**
-**	Description:
-**		Checks if 'c' is a lower-case (between 'a' and 'z' in the ascii table).
-**	
-**	Return values:
-**		1 (true) if it is, 0 (false) else.
-*/
 int	ft_islower(int c)
 {
 	if (c >= 'a' && c <= 'z')

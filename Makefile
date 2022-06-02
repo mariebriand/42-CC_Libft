@@ -6,7 +6,7 @@
 #    By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/11/06 16:47:32 by mabriand          #+#    #+#              #
-#    Updated: 2022/05/31 16:57:28 by mabriand         ###   ########.fr        #
+#    Updated: 2022/06/02 14:28:45 by mabriand         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,8 @@ STRING = src/string/
 #-------------------------------CHAR-#
 SRCS += $(CHAR)ft_isalpha.c		$(CHAR)ft_isdigit.c		$(CHAR)ft_isalnum.c \
 		$(CHAR)ft_isascii.c		$(CHAR)ft_isprint.c		$(CHAR)ft_toupper.c \
-		$(CHAR)ft_tolower.c		$(CHAR)ft_isspace.c
+		$(CHAR)ft_tolower.c		$(CHAR)ft_isspace.c		$(CHAR)ft_isupper.c \
+		$(CHAR)ft_islower.c
 
 #----------------------------CONVERT-#
 SRCS += $(CONVERT)ft_atoi.c		$(CONVERT)ft_itoa.c		$(CONVERT)ft_uitoa.c

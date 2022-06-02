@@ -6,24 +6,11 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/08 17:57:40 by mabriand          #+#    #+#             */
-/*   Updated: 2022/05/31 17:07:40 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/06/02 14:35:19 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/libft.h"
-
-/*
-** Applique la fonction f à chaque caractère de la
-** chaine de caractères passée en argument pour créer
-** une nouvelle chaine de caractères (avec malloc(3))
-** résultant des applications successives de f.
-** =========
-** #1 : la chaine de caractères sur laquelle itérer
-** #2 : la fonction à appliquer à chaque caractère
-** =========
-** Retourne La chaine de caractères résultant des applications
-** successives de f, NULL si l’allocationéchoue
-*/
 
 char		*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

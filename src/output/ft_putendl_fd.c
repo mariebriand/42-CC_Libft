@@ -6,20 +6,11 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/08 16:55:22 by mabriand          #+#    #+#             */
-/*   Updated: 2022/05/31 17:07:02 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/06/02 14:33:50 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/libft.h"
-
-/*
-** Écrit la chaîne de caractères s sur le file descriptor donné,
-** suivi d'un retour à la ligne.
-** =========
-** #1 : la chaîne à écrire.
-** #2 : le file descriptor.
-** =========
-*/
 
 void	ft_putendl_fd(char *s, int fd)
 {
@@ -28,4 +19,5 @@ void	ft_putendl_fd(char *s, int fd)
 		ft_putstr_fd(s, fd);
 		ft_putchar_fd('\n', fd);
 	}
+	return ;
 }

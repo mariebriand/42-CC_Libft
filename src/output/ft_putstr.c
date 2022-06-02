@@ -6,21 +6,15 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/16 14:15:25 by mabriand          #+#    #+#             */
-/*   Updated: 2022/05/31 17:07:09 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/06/02 14:34:15 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/libft.h"
 
-/*
-** Écrit la chaîne de caractères s.
-** =========
-** #1 : la chaîne à écrire.
-** =========
-*/
-
 void	ft_putstr(char *s)
 {
 	if (s != NULL)
 		write(1, s, ft_strlen(s));
+	return ;
 }
