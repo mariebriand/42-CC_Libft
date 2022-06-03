@@ -49,10 +49,9 @@ And so, don't forget ton include the header `libft.h` at the top of `[some_file]
 
 ## Project status ##
 
-This project is finished, it has passed the 3 needed peer-corrections and the 42moulinette. 
-
+This project is finished, it has passed the 3 needed peer-corrections and the 42moulinette.  
 As I did not passed all bonuses at that time (113 instead of 115 over 100), I corrected them after
-some time.
+some time.  
 Even though everything should be good by now, be aware that bonuses were not tested the usual way.
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-c.svg)](https://forthebadge.com)
