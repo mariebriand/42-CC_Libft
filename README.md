@@ -1,5 +1,7 @@
 # Libft #
 
+[![mabriand's 42 Libft Score](https://badge42.vercel.app/api/v2/cl3y8m48b020709mm5fyc36fq/project/1619062)](https://github.com/JaeSeoKim/badge42)
+
 ***Your very first own library***
 
 > This project is about coding a C library.  
