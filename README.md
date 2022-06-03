@@ -8,8 +8,8 @@
 It will contain a collection of general purpose functions the different programs of your cursus will
 rely upon.
 > In fact, C programming can be very tedious when one doesn’t have access to the highly useful
-standard functions. Then, this project is about understanding the way these functions work, implementing
-and learning to use them.
+standard functions. Then, this project is about understanding the way these functions work,
+implementing and learning to use them.
 
 ## Description ##
 
@@ -38,8 +38,8 @@ And so, don't forget ton include the header `libft.h` at the top of `[some_file]
 
 ## Roadmap ##
 
-* Check for the right license (and document myself about open source licenses)
-* Add a way to reach me for support
+* Check for the right license (and document myself about open source licenses).
+* Add a way to reach me for support.
 
 <!-- ## Contributing ## -->
 
@@ -49,7 +49,9 @@ And so, don't forget ton include the header `libft.h` at the top of `[some_file]
 
 ## Project status ##
 
-This project is finished, it has passed the 3 needed peer-corrections and the 42moulinette. 
-As I did not passed all bonuses at that time (113 instead of 115 over 100), I corrected them after some time. Enven though everything should be good by now, be aware that these functions were not tested the usual way.
+This project is finished, it has passed the 3 needed peer-corrections and the 42moulinette. <\br>
+As I did not passed all bonuses at that time (113 instead of 115 over 100), I corrected them after
+some time. <\br>
+Even though everything should be good by now, be aware that bonuses were not tested the usual way.
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-c.svg)](https://forthebadge.com)
