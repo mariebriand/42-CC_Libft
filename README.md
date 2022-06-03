@@ -38,6 +38,7 @@ And so, don't forget ton include the header `libft.h` at the top of `[some_file]
 
 * Check for the right license (and document myself about open source licenses).
 * Add a way to reach me for support.
+* Add the official subject from 42intra.
 
 <!-- ## Contributing ## -->
 
