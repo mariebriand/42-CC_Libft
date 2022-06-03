@@ -1,4 +1,5 @@
-# Libft #
+# Libft # ![mabriand's 42 Libft Score](https://badge42.vercel.app/api/v2/cl3y8m48b020709mm5fyc36fq/project/1619062)](https://github.com/JaeSeoKim/badge42)
+
 [![forthebadge](https://forthebadge.com/images/badges/made-with-c.svg)](https://forthebadge.com)
 
 ***Your very first own library***
@@ -35,7 +36,7 @@ And so, don't forget ton include the header `libft.h` at the top of `[some_file]
 
 ## Roadmap ##
 
-## Conributing ##
+## Contributing ##
 
 ## Authors and acknowledgement ##
 
@@ -43,5 +44,4 @@ And so, don't forget ton include the header `libft.h` at the top of `[some_file]
 
 ## Project status ##
 
-[![mabriand's 42 Libft Score](https://badge42.vercel.app/api/v2/cl3y8m48b020709mm5fyc36fq/project/1619062)](https://github.com/JaeSeoKim/badge42)
 [![forthebadge](https://forthebadge.com/images/badges/made-with-c.svg)](https://forthebadge.com)
