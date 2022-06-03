@@ -55,3 +55,4 @@ As I did not passed all bonuses at that time (113 instead of 115), I corrected t
 Even though everything should be good by now, be aware that bonuses were not tested the usual way.
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-c.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com)
