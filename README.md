@@ -6,7 +6,7 @@
 
 > This project is about coding a C library. 
 It will contain a collection of general purpose functions the different programs of your cursus will
-rely upon.
+rely upon.  
 > In fact, C programming can be very tedious when one doesn’t have access to the highly useful
 standard functions. Then, this project is about understanding the way these functions work,
 implementing and learning to use them.
