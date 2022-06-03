@@ -30,7 +30,7 @@ You will then end up with a static library.
 ## Usage ##
 
 `$ gcc -Wall -Werror -Wextra [some_file].c libft.a` </br>
-And so, don't forget ton include the header `libft.h` at the top of `[some_file].c` that obviously must contain a main() function.
+And so, don't forget ton include the header `libft.h` at the top of `[some_file].c` that obviously must contain a main() function.  
 `$ ./a.out`
 
 <!-- ## Support ## -->
