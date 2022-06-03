@@ -17,8 +17,6 @@ The objective of this project is to create a static library (.a file).
 It is actually just an archive of the original .o files, made with the `ar` command (a precedessor
 of `tar` now just used to make libraries).
 
-The implemetend functions are the following:
-
 <!-- ## Visuals ## -->
 
 ## Installation ##
