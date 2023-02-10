@@ -6,7 +6,7 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/05 13:46:12 by mabriand          #+#    #+#             */
-/*   Updated: 2022/06/02 14:35:32 by mabriand         ###   ########.fr       */
+/*   Updated: 2023/02/10 12:16:51 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	size_t i;
-	size_t pos;
+	size_t	i;
+	size_t	pos;
 
 	if (!*needle)
 		return ((char *)haystack);

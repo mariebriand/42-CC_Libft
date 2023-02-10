@@ -6,7 +6,7 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/06 13:26:44 by mabriand          #+#    #+#             */
-/*   Updated: 2022/06/02 14:35:35 by mabriand         ###   ########.fr       */
+/*   Updated: 2023/02/10 12:17:05 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 char	*ft_strrchr(const char *s, int c)
 {
 	size_t	i;
-	char	c2;
-	char	*str;
+	char		c2;
+	char		*str;
 
 	str = (char *)s;
 	i = ft_strlen(str);

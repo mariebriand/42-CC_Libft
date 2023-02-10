@@ -6,7 +6,7 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 16:50:40 by mabriand          #+#    #+#             */
-/*   Updated: 2022/06/02 14:35:09 by mabriand         ###   ########.fr       */
+/*   Updated: 2023/02/10 12:18:15 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-	size_t len;
-	size_t lensrc;
-	size_t lendest;
-	size_t j;
+	size_t	len;
+	size_t	lensrc;
+	size_t	lendest;
+	size_t	j;
 
 	lensrc = ft_strlen(src);
 	lendest = ft_strlen(dst);

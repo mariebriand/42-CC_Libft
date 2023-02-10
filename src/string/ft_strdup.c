@@ -6,7 +6,7 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/05 10:57:14 by mabriand          #+#    #+#             */
-/*   Updated: 2022/06/02 14:35:03 by mabriand         ###   ########.fr       */
+/*   Updated: 2023/02/10 12:18:40 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ char	*ft_strdup(const char *s1)
 {
 	size_t	i;
 	size_t	size;
-	char	*s;
-	char	*copy;
+	char		*s;
+	char		*copy;
 
 	i = 0;
 	s = (char *)s1;

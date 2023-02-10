@@ -6,7 +6,7 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/08 17:09:19 by mabriand          #+#    #+#             */
-/*   Updated: 2022/06/02 14:35:41 by mabriand         ###   ########.fr       */
+/*   Updated: 2023/02/10 12:16:30 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	i;
-	char	*str;
+	char	  *str;
 
 	i = 0;
 	if (s == NULL)

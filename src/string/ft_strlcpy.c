@@ -6,7 +6,7 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/03 09:58:58 by mabriand          #+#    #+#             */
-/*   Updated: 2022/06/02 14:35:12 by mabriand         ###   ########.fr       */
+/*   Updated: 2023/02/10 12:17:57 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	size_t i;
+	size_t	i;
 
 	if (dst == NULL || src == NULL)
 		return (0);

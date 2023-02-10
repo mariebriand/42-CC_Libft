@@ -6,7 +6,7 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/06 13:55:59 by mabriand          #+#    #+#             */
-/*   Updated: 2022/06/02 14:32:44 by mabriand         ###   ########.fr       */
+/*   Updated: 2023/02/10 12:13:21 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t			i;
+	size_t		  	i;
 	unsigned char	*char1;
 	unsigned char	*char2;
 

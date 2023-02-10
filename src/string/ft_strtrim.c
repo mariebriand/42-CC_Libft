@@ -6,7 +6,7 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/08 17:59:24 by mabriand          #+#    #+#             */
-/*   Updated: 2022/06/02 14:35:38 by mabriand         ###   ########.fr       */
+/*   Updated: 2023/02/10 12:16:25 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char		*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	start;
 	size_t	len;
-	char	*trimedstr;
+	char	  *trimedstr;
 
 	if (s1 == NULL || set == NULL)
 		return (NULL);

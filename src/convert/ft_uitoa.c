@@ -6,7 +6,7 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/17 15:14:18 by mabriand          #+#    #+#             */
-/*   Updated: 2022/06/02 14:29:05 by mabriand         ###   ########.fr       */
+/*   Updated: 2023/02/10 12:08:19 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 char	*ft_uitoa(unsigned int n)
 {
 	unsigned long	tmp;
-	char			*str;
-	size_t			len;
+	char					*str;
+	size_t				len;
 
 	tmp = (unsigned long)n;
 	str = NULL;

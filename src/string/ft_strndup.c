@@ -6,7 +6,7 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/04 15:13:43 by mabriand          #+#    #+#             */
-/*   Updated: 2022/06/02 14:35:29 by mabriand         ###   ########.fr       */
+/*   Updated: 2023/02/10 12:17:11 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char		*ft_strndup(char *s1, size_t size)
 {
 	size_t	i;
-	char	*copy;
+	char	  *copy;
 
 	i = 0;
 	copy = ((char *)malloc(sizeof(*copy) * (size + 1)));

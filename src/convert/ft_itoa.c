@@ -6,7 +6,7 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/11 09:56:08 by mabriand          #+#    #+#             */
-/*   Updated: 2022/06/02 14:29:00 by mabriand         ###   ########.fr       */
+/*   Updated: 2023/02/10 12:12:25 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_itoa(int n)
 {
-	long	tmp;
-	char	*str;
+	long		tmp;
+	char		*str;
 	size_t	len;
 
 	tmp = (long)n;

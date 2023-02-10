@@ -6,7 +6,7 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/18 19:47:11 by mabriand          #+#    #+#             */
-/*   Updated: 2022/06/02 14:34:44 by mabriand         ###   ########.fr       */
+/*   Updated: 2023/02/10 12:15:48 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static void	ft_free_split(char **tab, size_t index)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	if (index > 0)
@@ -81,7 +81,7 @@ static int	ft_countword(const char *s, char c)
 
 char		**ft_split(const char *s, char c)
 {
-	char	**tab;
+	char		**tab;
 	size_t	len;
 
 	tab = NULL;

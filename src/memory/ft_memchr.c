@@ -6,7 +6,7 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/06 12:50:28 by mabriand          #+#    #+#             */
-/*   Updated: 2022/06/02 14:32:22 by mabriand         ###   ########.fr       */
+/*   Updated: 2023/02/10 12:13:13 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t				i;
+	size_t				  i;
 	unsigned char		c2;
 	unsigned char		*str;
 

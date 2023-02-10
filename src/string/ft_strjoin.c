@@ -6,7 +6,7 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/11 09:52:07 by mabriand          #+#    #+#             */
-/*   Updated: 2022/06/02 14:35:06 by mabriand         ###   ########.fr       */
+/*   Updated: 2023/02/10 12:18:30 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char			*ft_strjoin(char const *s1, char const *s2)
 	size_t	i;
 	size_t	j;
 	size_t	len;
-	char	*str;
+	char		*str;
 
 	i = 0;
 	j = 0;
