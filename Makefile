@@ -25,31 +25,31 @@ STRING = src/string/
 #################################### SOURCES ###################################
 
 #-------------------------------CHAR-#
-SRCS += $(CHAR)ft_isalpha.c		$(CHAR)ft_isdigit.c		$(CHAR)ft_isalnum.c \
-				$(CHAR)ft_isascii.c		$(CHAR)ft_isprint.c		$(CHAR)ft_toupper.c \
-				$(CHAR)ft_tolower.c		$(CHAR)ft_isspace.c		$(CHAR)ft_isupper.c \
+SRCS += $(CHAR)ft_isalpha.c	$(CHAR)ft_isdigit.c	$(CHAR)ft_isalnum.c \
+				$(CHAR)ft_isascii.c	$(CHAR)ft_isprint.c	$(CHAR)ft_toupper.c \
+				$(CHAR)ft_tolower.c	$(CHAR)ft_isspace.c	$(CHAR)ft_isupper.c \
 				$(CHAR)ft_islower.c
 
 #----------------------------CONVERT-#
-SRCS += $(CONVERT)ft_atoi.c		$(CONVERT)ft_itoa.c		$(CONVERT)ft_uitoa.c
+SRCS += $(CONVERT)ft_atoi.c	$(CONVERT)ft_itoa.c	$(CONVERT)ft_uitoa.c
 
 #-------------------------------LIST-#
-SRCS += $(LIST)ft_lstnew.c		$(LIST)ft_lstsize.c		$(LIST)ft_lstadd_back.c \
-				$(LIST)ft_lstclear.c	$(LIST)ft_lstiter.c		$(LIST)ft_lstmap.c \
-				$(LIST)ft_lstdelone.c	$(LIST)ft_lstlast.c		$(LIST)ft_lstadd_front.c
+SRCS += $(LIST)ft_lstnew.c	$(LIST)ft_lstsize.c	$(LIST)ft_lstadd_back.c \
+				$(LIST)ft_lstclear.c	$(LIST)ft_lstiter.c	$(LIST)ft_lstmap.c \
+				$(LIST)ft_lstdelone.c	$(LIST)ft_lstlast.c	$(LIST)ft_lstadd_front.c
 
 #-----------------------------MEMORY-#
-SRCS += $(MEMORY)ft_memset.c	$(MEMORY)ft_bzero.c		$(MEMORY)ft_memcpy.c \
+SRCS += $(MEMORY)ft_memset.c	$(MEMORY)ft_bzero.c	$(MEMORY)ft_memcpy.c \
 				$(MEMORY)ft_memccpy.c	$(MEMORY)ft_memmove.c	$(MEMORY)ft_memchr.c \
 				$(MEMORY)ft_memcmp.c	$(MEMORY)ft_calloc.c
 
 #--------------------------------NBR-#
-SRCS += $(NBR)ft_intlen.c		$(NBR)ft_uintlen.c		$(NBR)ft_hexintlen.c \
+SRCS += $(NBR)ft_intlen.c	$(NBR)ft_uintlen.c	$(NBR)ft_hexintlen.c \
 				$(NBR)ft_long_hexintlen.c
 
 #-----------------------------OUTPUT-#
-SRCS += $(OUTPUT)ft_putchar_fd.c						$(OUTPUT)ft_putnbr_fd.c \
-				$(OUTPUT)ft_putstr_fd.c							$(OUTPUT)ft_putendl_fd.c \
+SRCS += $(OUTPUT)ft_putchar_fd.c			$(OUTPUT)ft_putnbr_fd.c \
+				$(OUTPUT)ft_putstr_fd.c	$(OUTPUT)ft_putendl_fd.c \
 				$(OUTPUT)ft_putstr.c
 
 #-----------------------------STRING-#
